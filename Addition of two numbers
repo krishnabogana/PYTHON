@@ -1,0 +1,14 @@
+Addition of two numbers
+You are given two numbers.Add the numbers and print the result.
+Input:
+      The first line contains two numbers a(1<=a<=10^100) and b(1<=b<=10^100).
+Output:
+      Output the sum of the two numbers.
+ Sample input1: 46 46
+ Sample output1: 92
+ 
+ 
+ PROGRAM
+     
+a,b=map(int,input().split())
+print(a+b)
