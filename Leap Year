@@ -1,0 +1,25 @@
+Question:
+Leap year is a year that contains an additional day in a common year. The number of days in a leap year are 366 days and the extra day comes in the month of February.
+Your task is that you will be given a year print "Leap Year" if it is a leap year and print "Not Leap Year" if it is not a leap year.
+Input:
+The first line contains the number of test case T(1<=T<=100)
+The next line contains the year y(1800<=N<=2400)
+Output:
+For each test case print"Leap Year" in a new line if it is a leap year or print "Not Leap Year" in a new line if it is not a leap year.
+Sample input1:
+2
+2020
+1921
+Sample output1:
+Leap Year
+Not Leap Year
+
+PROGRAM:
+
+t=int(input())
+for i in range(t):
+    b=int(input())
+    if b%4==0 and b%100!=0 or b%400==0:
+        print("Leap Year")
+    else:
+        print("Not Leap Year")
