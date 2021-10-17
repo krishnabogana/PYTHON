@@ -1,0 +1,44 @@
+Question:
+You are given a string s. Count the number of vowels in the string and print the count.
+Input:
+     .First-line contains the string.
+     .The string contains all the lowercase and uppercase letters.
+Output:
+      .Output the number of vowels in the string.
+Sample input1: kpsowksbsjsomyk
+Sample output1: 2
+
+PROGRAM 1:
+
+s=input()
+e=s.count("e")
+E=s.count("E")
+i=s.count("i")
+I=s.count("I")
+o=s.count("o")
+O=s.count("O")
+u=s.count("u")
+U=s.count("U")
+a=s.count("a")
+A=s.count("A")
+print(A+a+e+E+i+I+o+O+u+U)
+
+PROGRAM 2:
+
+s=input()
+sum=0
+vowel=set("aeiouAEIOU")
+for i in s:
+    if i in vowel:
+        sum+=1
+print(sum)
+
+PROGRAM 3:
+s=input()
+lowercase=s.lower()
+vowel={}
+for i in "aeiou":
+    vcount=lowercase.count(i)
+    vowel[i]=vcount
+tcount=vowel.values()
+print(sum(tcount))
