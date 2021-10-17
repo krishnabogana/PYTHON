@@ -1,0 +1,36 @@
+Question:
+Write a Python program to read three sides a,b,c of a triangle and print the type of the triangle.
+There are 4 types of Triangle:
+Right angle triangle
+Equilateral triangle
+Isosceles triangle
+Scalence Triangle
+Input:
+Will be give a,b,c the side length of the triangle.
+Output:
+Single String displaying type of the triangle.
+Sample input1:
+4
+3 4 5 
+4 8 2
+8 8 4
+5 5 5
+Sample output1:
+Right angle triangle
+Scalence Triangle
+Isosceles triangle
+Equilateral triangle
+
+PROGRAM:
+
+t=int(input())
+for i in range(t):
+    a,b,c=map(int,input().split())
+    if a**2==b**2+c**2 or b**2==a**2+c**2 or c**2==b**2+a**2:
+        print("Right angle triangle")
+    elif (a==b and a!=c and b!=c)or(b==c and b!=a and c!=a)or(c==a and b!=c and b!=a):
+        print("Isosceles triangle")
+    elif a==b==c:
+        print("Equilateral triangle")
+    else:
+        print("Scalene Triangle")
