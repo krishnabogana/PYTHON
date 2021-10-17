@@ -1,0 +1,13 @@
+Question:
+You are given the length of the side of a square.Find the area and perimeter of a square.
+Input:
+     .First-line contains the length of the side of a square.
+Output:
+     .Output the area and perimeter of the square.
+Sample input1: 5
+Sample output1: 25 20
+
+PROGRAM:
+
+n=int(input())
+print(n**2,4*n)
