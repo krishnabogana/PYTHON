@@ -1,0 +1,21 @@
+Sample input 1: 5
+Sample output 1:
+    *
+   **
+  ***
+ ****
+*****
+
+PROGRAM:
+
+n=int(input())
+c=n-1
+for i in range(n):
+    for k in range(c):
+        print(' ',end='')
+    c-=1
+    t=0
+    while t<=i:
+        print("*",end="")
+        t+=1
+    print()
