@@ -1,0 +1,13 @@
+Question:
+You need to take two numbers as input a and b and print the a power b.
+Input:
+     .First-line contains two numbers a and b.
+Output:
+     .Output the result.
+Sample input 1: 2 3
+Sample output 1: 8
+ 
+PROGRAM:
+
+a=[int(b) for b in input().split()]
+print(a[0]**a[1])
