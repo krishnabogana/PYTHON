@@ -1,0 +1,48 @@
+Question:
+Nithin is a hardworking student, he studies and stores all information/data in a well organized format in his laptop, so he can have an easy access to his study material whenever required. Nithin doesn't like to share his laptop data with everyone and he trust only few friends.
+Shankar is a smart working student, he collects data from different students and prepares with them.Shankar asked many times nithin to share his data but nithin refused to give. One day Nithin's laptop was with his friend Hemanth and Shankar got a right time to copy data from Nithin's Laptop before Nithin comes. Based on the below statements you have to determine whether Shankar will be able to take whole data or not before Nithin arrives.
+There will be 3 parameters Time,Speed , and Data Size:
+Given the Time Limit Nithin will return and speed of Data transfer in MB/s and Data Size.You have to determine who will win.
+Print SHANKAR if he gets whole data on time or print NITHIN if nithin reaches in between of file transfer.
+Time will be given in minutes. Speed will be given in MB/s. Data will be in GB.
+NOTE: 1GB = 1024MB
+Input:
+First Line contains T,no. of test cases.
+Next T lines contains a three integers t,s,d time,speed and amount of data respectively.
+Output:
+Print who will win for each Test case in different line.
+
+Constraints:
+1<=T<=1000
+1min<=t<=120min
+1MB/s<=s<=100MB/s
+1GB<=d<=150GB
+
+Sample input1: 
+4
+2 44 5
+28 45 76
+60 15 50
+30 5 18
+
+Sample output1:
+SHANKAR
+NITHIN
+SHANKAR
+NITHIN
+
+Explanation:
+For, time=2min, speed=44MB/s and Data=5GB
+Total for data transfer took time=116sec approx.
+And Time is 2min=120sec
+So, SHANKAR WON
+
+PROGRAM:
+
+t=int(input())
+for i in range(t):
+    t,s,d=map(int,input().split())
+    if ((t*60)>=(d*1024)//s):
+        print("SHANKAR")
+    else:
+        print("NITHIN")
